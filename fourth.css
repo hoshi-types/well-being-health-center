@@ -1,0 +1,1208 @@
+/* For codes that affect ALL the same elements */
+
+
+#top {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.title-container {
+    width: 100%;
+     background-color: white;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+a {
+    text-decoration: none;
+color: black;
+  }
+  
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+.company-title {
+    
+    font-family: 'Chakra Petch';
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+   
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    float: left;
+   position: sticky;
+}
+
+
+
+/* background elements------------------------------------------------------------------------------------- */
+
+.background-clip {
+  
+    width: 100%;
+    
+    
+    z-index: -1;
+    
+    position: absolute;
+  height: auto;
+
+}
+
+/* CSS elements for the middle content of the webpage ----------------------------------------------------------------------------------------------------------------*/
+
+.middle {
+  background-color: rgb(234, 234, 234);
+  height: 85%;
+  width: 1000px;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 19%;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  justify-content: center;
+  margin-top: 150px;
+  
+}
+
+.contain {
+  position: relative;
+  
+}
+ .overall {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+ }
+
+.nav > div {
+  display: inline;
+  font-family: 'Tomorrow';
+  font-size: 25px;
+  float: right;
+  left: 10px;
+  font-weight: bold;
+  font-style: italic;
+  list-style-type: none;
+  padding: 2rem;
+}
+
+.nav > li {
+  display: inline;
+  padding: 2rem;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdwon information ----------------------------------------------------------------------------------------------------------------------------*/
+
+.dropbtn {
+  
+  color: black;
+  padding: 5px;
+  font-size: 25px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 2rem;
+  font-size: 20px;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  color: rgb(60, 171, 60);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+ 
+}
+
+#size-var {
+  width: 300px;
+}
+
+/* Content in the white box, placed middle of the webpage ------------------------------------------------------------------------------------- */
+
+.middle-head {
+  text-align: center;
+  font-family: 'Tomorrow';
+  font-weight: bold;
+  color: rgb(60, 171, 60);
+  font-size: 55px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.middle-head2 {
+  text-align: center;
+  font-family: 'Tomorrow';
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+  padding: 0;
+  margin: auto;
+}
+
+/* Columns -----------------------------------------------------------------------------------------------*/
+
+.grid-columns {
+  display: grid;
+  grid-template-columns: 350px 300px;
+  justify-content: center;
+  margin-top: 20px;
+  padding-right: 110px;
+}
+
+.location {
+  font-family: 'Tomorrow';
+  font-size: 30px;
+  float: left;
+  text-decoration: underline;
+}
+
+.location-video {
+  width: 450px;
+  height: 400px;
+
+
+}
+
+.column2 {
+  display: block;
+  padding-right: 20px;
+  margin-right: 40px;
+}
+
+.column1 {
+  
+  padding-right: 10px;
+  
+}
+
+.info-below {
+  
+  font-family: 'Tomorrow';
+  font-size: 20px;
+  
+}
+
+/* Image slider -----------------------------------------------------------------------*/
+
+.slider {
+ top:  45px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.track {
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+perspective: 100px;
+}
+
+img {
+  width: 100%;
+  transition: transform 1s;
+}
+
+img:hover {
+  transform: translateZ(20px);
+  
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.track:hover {
+animation-play-state: paused;
+}
+
+/* Bottom footer */
+
+.bottom {
+  position: absolute;
+  left: 0;
+  bottom: 3;
+z-index: 4;
+  height: 70px;
+  width: 100%;
+  background-color: rgb(22, 61, 22);
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  
+  font-family: 'Tomorrow';
+}
+
+#under-vid {
+  font-family: 'Tomorrow';
+  color: rgb(60, 171, 60);
+  font-size: 14px;
+  text-align: center;
+}
+
+.under-vid-placement {
+  width: 400px;
+padding: 0;
+height: 200px;
+top: 500px;
+right: 100px;
+display: block;
+position: absolute;
+line-height: 20px;
+}
+
+
+
+/* Info about aboutus.html --------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* The info for the middle section ----------------------------------------------------------------------------------*/
+#middle-about {
+  background-color: rgb(234, 234, 234);
+  height: 100%;
+  width: 1200px;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 13%;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  justify-content: center;
+  padding-bottom: 140px;
+  
+}
+
+#about-info {
+  text-decoration: underline;
+}
+
+#center-please {
+ padding-top: 90px;
+}
+
+.about-content {
+  display: block;
+  justify-content: center;
+  position: absolute;
+  z-index: 7;
+  top: 80%;
+  height: 100%;
+}
+
+.about-title {
+  font-family: 'Tomorrow';
+  color: black;
+  font-size: 37px;
+}
+
+.description-about {
+  display: block;
+
+  font-family: 'Tomorrow';
+  text-align: center;
+}
+
+/* CSS for chiro.html ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.chiro-info {
+  display: grid;
+  grid-template-columns: 400px 600px;
+ 
+}
+
+.chiro1 {
+    display: block;
+    justify-content: center;
+position: relative;
+left: 50px;
+bottom: 140px;
+}
+
+.spine {
+  width: 500px;
+  height: 400px;
+}
+
+#middle-about2 {
+  background-color: rgb(55, 74, 58);
+  height: 75%;
+  width: 1200px;
+  z-index: 1;
+  padding-top: 210px;
+ 
+  right: 13%;
+  top: 150px;
+  ;
+  position: absolute;
+  justify-content: center;
+ 
+  
+}
+
+.care {
+  float: right;
+  position: relative;
+  left: 140px;
+  bottom: 200px;
+  font-family: 'Tomorrow';
+  color: white;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.care2 {
+  float: right;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  bottom: 230px;
+}
+
+.care3 {
+  float: right;
+  position: relative;
+  color: white;
+  font-size: 16px;
+  bottom: 240px;
+  width: 560px;
+  left: 150px;
+  font-family: 'Tomorrow';
+  line-height: 25px;
+}
+
+.bottom-paragraph {
+  text-align: center;
+  font-family: 'Tomorrow';
+  color: white;
+  font-size: 16px;
+  position: relative;
+  bottom: 240px;
+  float: left;
+  left: 50px;
+  width: 1100px;
+  line-height: 25px;
+}
+
+.background-clip2 {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+height: auto;
+
+}
+
+.bottom-buttons {
+  display: inline;
+  font-family: 'Tomorrow';
+  
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.bottom-buttons a {
+  color: white;
+}
+
+.button1 {
+  width: 400px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button1:hover {
+  background-color: rgb(133, 133, 133);
+  cursor: pointer;
+  transition: 100ms;
+}
+
+/* CSS for symptoms.html ------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#visited-sym {
+  
+  text-decoration: underline;
+}
+
+#middle-about3 {
+  background-color: rgb(55, 74, 58);
+  height: 69%;
+  width: 1200px;
+  z-index: 1;
+  padding-top: 210px;
+ 
+  right: 13%;
+  top: 150px;
+  ;
+  position: absolute;
+  justify-content: center;
+ 
+  
+}
+
+/* CSS for resource.html ------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.resource-title {
+    display: block;
+   z-index: 6;
+   position: relative;
+   bottom: 190px;
+}
+
+.resource-title-text {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Tomorrow';
+    color: white;
+
+}
+
+.white-about {
+    background-color: rgb(223, 223, 223);
+    width: 1200px;
+    height: 79%;
+    bottom: 40px;
+    position: absolute;
+}
+
+.grid-for-resources {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+}
+
+.resource-grid1 {
+
+}
+
+.resource-grid2 {
+
+}
+
+.resources-titles-info{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Tomorrow';
+}
+
+.patients-list1 {
+    list-style-type: circle;
+    font-family: 'Tomorrow';
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.link1-resources {
+    font-family: 'Tomorrow';
+    text-decoration: underline;
+
+}
+
+.link1-resources:hover {
+    color: rgb(60, 171, 60);
+}
+
+#link1-soo {
+    display: block;
+   text-align: center;
+   position: relative;
+   top: 20px;
+   font-size: 20px;
+}
+
+
+/* CSS for meetourstaff.html -----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.staff-title {
+
+text-align: center;
+color: white;
+font-family: 'Tomorrow';
+font-size: 40px;
+z-index: 10;
+position: relative;
+bottom: 200px;
+}
+
+.staff-images {
+  display: inline-block;
+  
+position: relative;
+width: 900px;
+  left: 420px;
+bottom: 200px;
+padding-left: 10px;
+}
+
+.staff-images2 {
+  display: inline-block;
+  
+position: absolute;
+width: 900px;
+  left: 420px;
+bottom: 200px;
+padding-left: 10px;
+}
+
+.hover-inform {
+  width: 110px;
+  height: 110px;
+
+}
+
+.hover-inform:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 3px white;
+}
+
+.hide {
+  display: none;
+}
+
+.staff-images:hover + .hide {
+  display: block;
+}
+
+.staff-images2 {
+  display: inline-block;
+  
+position: relative;
+width: 300px;
+  left: 545px;
+bottom: 314px;
+padding-left: 10px;
+}
+
+.staff-images3 {
+  display: inline-block;
+  
+position: relative;
+width: 300px;
+  left: 356px;
+bottom: 315px;
+padding-left: 10px;
+}
+
+.hover-inform2 {
+  width: 410px;
+  height: 410px;
+position: absolute;
+border: 8px solid white;
+}
+
+.grid-for-staff-members {
+  display: grid;
+  grid-template-columns: 400px 400px;
+
+
+}
+
+.grid-mega1 {
+position: absolute;
+left: 100px;
+bottom: 490px;
+z-index: 10;
+}
+
+.grid-mega2 {
+  position: absolute;
+left: 600px;
+right: 100px;
+bottom: 100px;
+justify-content: center;
+display: block;
+z-index: 10;
+}
+
+.paragraph700 {
+  text-align: center;
+}
+
+.heading-700 {
+  text-align: center;
+  position: relative;
+}
+
+.white-backhand {
+  background-color: rgb(192, 192, 192);
+  height: 41%;
+  width: 1200px;
+  z-index: -3;
+  padding-top: 210px;
+ 
+  
+  top: 250px;
+  
+  position: absolute;
+  justify-content: center;
+ 
+}
+
+.staff-images2:hover + .hide {
+  display: block;
+}
+.staff-images3:hover + .hide {
+  display: block;
+}
+
+.staff-images3 {
+  display: inline-block;
+  
+position: absolute;
+width: 300px;
+  left: 670px;
+bottom: 554px;
+padding-left: 10px;
+}
+
+/* CSS code for forpatients.html -----------------------------------------------------------------------------------------------------------------------------*/
+
+#middle-about4 {
+    background-color: rgb(55, 74, 58);
+    height: 69%;
+    width: 1200px;
+    z-index: 1;
+    padding-top: 210px;
+   
+    right: 13%;
+    top: 150px;
+    ;
+    position: absolute;
+    justify-content: center;
+   
+    
+  }
+  
+  .white-backhand2 {
+    background-color: rgb(192, 192, 192);
+    height: 61%;
+    width: 1170px;
+    z-index: -3;
+    padding-top: 210px;
+   
+    border: 15px solid rgb(55, 74, 58);
+    top: 110px;
+    overflow: scroll;
+    position: absolute;
+    justify-content: center;
+   
+  }
+
+  .preage {
+    font-family: 'Tomorrow';
+    color: white;
+    font-size: 45px;
+     font-weight: bold;
+     text-align: center;
+     position: relative; 
+     bottom: 200px;
+  }
+
+  .list-of-patient-knowledge li {
+display: inline-block;
+    text-align: center;
+     font-family: 'Tomorrow';
+     font-size: 30px; 
+     color: black;
+width: 1000px;
+position: relative;
+padding: 30px;
+bottom: 180px;
+font-weight: bold;
+  }
+
+ul {
+    list-style-type: none;
+
+}
+
+.eq:hover {
+    color:  rgb(60, 171, 60);
+    text-decoration: none;
+}
+
+.hr-color {
+    color: black;
+border: 1px solid black;
+width: 900px;
+position: relative;
+bottom: 100px;
+}
+
+.simmysammy {
+    text-align: center;
+    position: relative;
+    bottom: 200px;
+    color: rgb(79, 79, 79);
+    font-size: 20px;
+}
+
+/* grids below in the "Our Services" section  */
+
+.grids-list-below-contents {
+
+    display: grid;
+    grid-template-columns: 400px 500px;
+
+
+}
+.grid1-services {
+display: block;
+justify-content: center;
+position: relative;
+left: 90px;
+bottom: 60px;
+padding-bottom: 40px;
+
+}
+
+
+.chiro-services {
+width: 500px;
+height: 300px;
+padding-top: 30px;
+}
+
+.services-title {
+font-size: 40px;
+text-align: center;
+color: black;
+position: relative;
+left: 190px;
+bottom: 75px;
+font-family: 'Tomorrow';
+text-decoration: underline;
+}
+
+.services-paragraph {
+  text-align: left;
+  position: relative;
+  font-size: 20px; 
+  left: 210px;
+  bottom: 60px;
+  font-family: 'Tomorrow';
+}
+
+.sentences-below-image {
+
+  position: relative;
+  right: 300px;
+}
+
+.services-paragraph2 {
+  text-align: left;
+  position: relative;
+  font-size: 20px; 
+  left: 90px;
+  bottom: 100px;
+  width: 1030px;
+  font-family: 'Tomorrow';
+}
+
+.title-insurances {
+text-align: center;
+font-family: 'Tomorrow';
+font-size: 35px;
+width: 800px;
+text-decoration: underline;
+position: relative;
+bottom: 100px;
+right: 50px;
+}
+
+.eryn {
+list-style-type: circle;
+font-family: 'Tomorrow';
+justify-content: center;
+display: block;
+position: relative;
+left: 200px;
+font-size: 20px;
+bottom: 100px;
+
+}
+
+.eryn li {
+  line-height: 40px;
+}
+
+.title-insurances2 {
+  text-align: center;
+  font-family: 'Tomorrow';
+  font-size: 35px;
+  width: 800px;
+  text-decoration: underline;
+  position: relative;
+  bottom: 100px;
+  left: 50px;
+  }
+  
+  .chiro-services2 {
+    width: 500px;
+    height: 300px;
+    padding-top: 30px;
+    position: relative;
+    left: 200px;
+    bottom: 100px;
+    }
+
+    .location1 {
+      position: relative;
+      left: 20px;
+      bottom: 80px;
+    }
+
+    .title-location {
+      text-align: center;
+      font-size: 50px;
+      padding-bottom: 10px;
+      font-family: 'Tomorrow';
+      position: relative;
+      bottom: 90px;
+    }
+
+    .gps-explain {
+      position: relative;
+      width: 600px;
+      left: 700px;
+bottom: 500px;
+
+    }
+
+    .title-location2 {
+      text-align: center;
+      font-size: 30px;
+      padding-bottom: 10px;
+      font-family: 'Tomorrow';
+      position: relative;
+    right: 160px;
+      text-decoration: underline;
+    }
+    .sdf {
+position: relative;
+right: 60px;
+      width: 500px;
+      height: 120px;
+      bottom: 40px;
+    }
+
+    .location-paragraph {
+      font-family: 'Tomorrow';
+      font-size: 20px;
+      position: relative;
+      right: 40px;
+    }
+
+    
+    .location-paragraph2 {
+      font-family: 'Tomorrow';
+      font-size: 20px;
+      position: relative;
+      right: 40px;
+      width: 400px;
+      bottom: 50px;
+    }
+
+    /* CSS for contactus.html */
+
+    .title-contact {
+      text-align: center;
+      color: white;
+      font-family: 'Tomorrow';
+      font-size: 50px;
+     position: relative;
+     bottom: 200px; 
+    }
+
+    .white-backhand3 {
+      background-color: rgb(192, 192, 192);
+      height: 61%;
+      width: 1170px;
+      z-index: -3;
+      padding-top: 210px;
+     
+      border: 15px solid rgb(55, 74, 58);
+      top: 130px;
+      bottom: 20px;
+      
+      position: absolute;
+      justify-content: center;
+     
+    }
+
+    .grid-contact {
+      display: grid;
+      grid-template-columns: 600px 200px;
+    }
+
+    .grid1-contact {
+
+      font-family: 'Tomorrow';
+      font-size: 30px;
+      color: black;
+      position: relative;
+      bottom: 190px;
+    }
+
+    .grid-contact li {
+      line-height: 50px;
+    }
+
+    .tothe {
+     position: relative;
+     left: 110px;
+    }
+
+    .majorsoossage {
+
+    font-size: 30px;
+    font-family: 'Tomorrow';
+    width: 500px;
+    position: relative;
+    top: 120px;
+    right: 560px;
+    }
+
+    .title-contact-2 {
+
+    }
+
+    .grid2-contact {
+      position: relative;
+      left: 640px;
+      bottom: 550px;
+      font-family: 'Tomorrow';
+      font-size: 20px;
+    }
+
+    .grid2-paragraph2 {
+
+      display: block;
+      position: relative;
+      height: 0;
+      line-height: 35px;
+      width: 500px;
+    }
+
+    .simmu {
+
+      position: absolute;
+      top: 500px;
+      right: 500px;
+      width: 600px;
+      font-size: 30px;
+      text-decoration: underline;
+    }
+
+    .simmu:hover {
+      color:rgb(60, 171, 60);
+      
+    }
+
+    /* CSS code for forms.html */
+
+    .white-backhand9 {
+      background-color: rgb(192, 192, 192);
+      height: 61%;
+      width: 1170px;
+      z-index: -3;
+      padding-top: 210px;
+     
+      border: 15px solid rgb(55, 74, 58);
+      top: 110px;
+      
+      position: absolute;
+      justify-content: center;
+     
+    }
+
+    .coui {
+      font-family: 'Tomorrow';
+      color: white;
+      font-size: 50px;
+      position: absolute;
+      bottom: 650px;
+      left: 500px;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .intake-form {
+      font-family: 'Tomorrow';
+      color: black;
+      font-size: 30px;
+      text-decoration: underline;
+      position: absolute;
+      left: 90px;
+      text-align: center;
+      bottom: 500px;
+    }
+
+    
+    .intake-form2 {
+      font-family: 'Tomorrow';
+      color: black;
+      font-size: 30px;
+      text-decoration: underline;
+      position: absolute;
+      left: 90px;
+      text-align: center;
+      bottom: 400px;
+    }
+
+     
+    .intake-form3 {
+      font-family: 'Tomorrow';
+      color: black;
+      font-size: 30px;
+      text-decoration: underline;
+      position: absolute;
+      left: 90px;
+      text-align: center;
+      bottom: 300px;
+    }
+
+
+    .intake-form:hover {
+      color:rgb(60, 171, 60);
+      transition: 300ms;
+    }
+
+    .intake-form2:hover {
+      color:rgb(60, 171, 60);
+      transition: 300ms;
+    }
+
+    
+    .intake-form3:hover {
+      color:rgb(60, 171, 60);
+      transition: 300ms;
+    }
+
+    .stone-tower {
+border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 600px;
+      bottom: 300px;
+      animation: floatingCircle1 2s infinite;
+      animation-play-state: running;
+      box-shadow: 10px 10px 10px black;
+    }
+
+  @keyframes floatingCircle1 {
+ 0% {
+top: 200px;
+ } 
+
+ 50% {
+  top: 217px;
+ }
+ 100% {
+top: 200px;
+ } 
+}
+
+.stone-tower2 {
+  border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 800px;
+        bottom: 200px;
+        animation: floatingCircle2 2s infinite;
+        animation-play-state: running;
+        box-shadow: 10px 10px 10px black;
+      }
+
+      @keyframes floatingCircle2 {
+        0% {
+       top: 400px;
+       left: 800px;
+        } 
+       
+        50% {
+         top: 417px;
+         left: 800px;
+        }
+        100% {
+       top: 400px;
+       left: 800px;
+        } 
+       }

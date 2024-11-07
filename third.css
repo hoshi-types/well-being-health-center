@@ -1,0 +1,722 @@
+/* For codes that affect ALL the same elements */
+
+
+#top {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.title-container {
+    width: 100%;
+     background-color: white;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+a {
+    text-decoration: none;
+color: black;
+  }
+  
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+.company-title {
+    
+    font-family: 'Chakra Petch';
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+   
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    float: left;
+   position: sticky;
+}
+
+
+
+/* background elements------------------------------------------------------------------------------------- */
+
+.background-clip {
+  
+    width: 100%;
+    
+    
+    z-index: -1;
+    
+    position: absolute;
+  height: auto;
+
+}
+
+/* CSS elements for the middle content of the webpage ----------------------------------------------------------------------------------------------------------------*/
+
+.middle {
+  background-color: rgb(234, 234, 234);
+  height: 85%;
+  width: 1000px;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 19%;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  justify-content: center;
+  margin-top: 150px;
+  
+}
+
+.contain {
+  position: relative;
+  
+}
+ .overall {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+ }
+
+.nav > div {
+  display: inline;
+  font-family: 'Tomorrow';
+  font-size: 25px;
+  float: right;
+  left: 10px;
+  font-weight: bold;
+  font-style: italic;
+  list-style-type: none;
+  padding: 2rem;
+}
+
+.nav > li {
+  display: inline;
+  padding: 2rem;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdwon information ----------------------------------------------------------------------------------------------------------------------------*/
+
+.dropbtn {
+  
+  color: black;
+  padding: 5px;
+  font-size: 25px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 2rem;
+  font-size: 20px;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  color: rgb(60, 171, 60);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+ 
+}
+
+#size-var {
+  width: 300px;
+}
+
+/* Content in the white box, placed middle of the webpage ------------------------------------------------------------------------------------- */
+
+.middle-head {
+  text-align: center;
+  font-family: 'Tomorrow';
+  font-weight: bold;
+  color: rgb(60, 171, 60);
+  font-size: 55px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.middle-head2 {
+  text-align: center;
+  font-family: 'Tomorrow';
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+  padding: 0;
+  margin: auto;
+}
+
+/* Columns -----------------------------------------------------------------------------------------------*/
+
+.grid-columns {
+  display: grid;
+  grid-template-columns: 350px 300px;
+  justify-content: center;
+  margin-top: 20px;
+  padding-right: 110px;
+}
+
+.location {
+  font-family: 'Tomorrow';
+  font-size: 30px;
+  float: left;
+  text-decoration: underline;
+}
+
+.location-video {
+  width: 450px;
+  height: 400px;
+
+
+}
+
+.column2 {
+  display: block;
+  padding-right: 20px;
+  margin-right: 40px;
+}
+
+.column1 {
+  
+  padding-right: 10px;
+  
+}
+
+.info-below {
+  
+  font-family: 'Tomorrow';
+  font-size: 20px;
+  
+}
+
+/* Image slider -----------------------------------------------------------------------*/
+
+.slider {
+ top:  45px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.track {
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+perspective: 100px;
+}
+
+img {
+  width: 100%;
+  transition: transform 1s;
+}
+
+img:hover {
+  transform: translateZ(20px);
+  
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.track:hover {
+animation-play-state: paused;
+}
+
+/* Bottom footer */
+
+.bottom {
+  position: absolute;
+  left: 0;
+  bottom: 3;
+z-index: 4;
+  height: 70px;
+  width: 100%;
+  background-color: rgb(22, 61, 22);
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  
+  font-family: 'Tomorrow';
+}
+
+#under-vid {
+  font-family: 'Tomorrow';
+  color: rgb(60, 171, 60);
+  font-size: 14px;
+  text-align: center;
+}
+
+.under-vid-placement {
+  width: 400px;
+padding: 0;
+height: 200px;
+top: 500px;
+right: 100px;
+display: block;
+position: absolute;
+line-height: 20px;
+}
+
+
+
+/* Info about aboutus.html --------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* The info for the middle section ----------------------------------------------------------------------------------*/
+#middle-about {
+  background-color: rgb(234, 234, 234);
+  height: 100%;
+  width: 1200px;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 13%;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  justify-content: center;
+  padding-bottom: 140px;
+  
+}
+
+#about-info {
+  text-decoration: underline;
+}
+
+#center-please {
+ padding-top: 90px;
+}
+
+.about-content {
+  display: block;
+  justify-content: center;
+  position: absolute;
+  z-index: 7;
+  top: 80%;
+  height: 100%;
+}
+
+.about-title {
+  font-family: 'Tomorrow';
+  color: black;
+  font-size: 37px;
+}
+
+.description-about {
+  display: block;
+
+  font-family: 'Tomorrow';
+  text-align: center;
+}
+
+/* CSS for chiro.html ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.chiro-info {
+  display: grid;
+  grid-template-columns: 400px 600px;
+ 
+}
+
+.chiro1 {
+    display: block;
+    justify-content: center;
+position: relative;
+left: 50px;
+bottom: 140px;
+}
+
+.spine {
+  width: 500px;
+  height: 400px;
+}
+
+#middle-about2 {
+  background-color: rgb(55, 74, 58);
+  height: 75%;
+  width: 1200px;
+  z-index: 1;
+  padding-top: 210px;
+ 
+  right: 13%;
+  top: 150px;
+  ;
+  position: absolute;
+  justify-content: center;
+ 
+  
+}
+
+.care {
+  float: right;
+  position: relative;
+  left: 140px;
+  bottom: 200px;
+  font-family: 'Tomorrow';
+  color: white;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.care2 {
+  float: right;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  bottom: 230px;
+}
+
+.care3 {
+  float: right;
+  position: relative;
+  color: white;
+  font-size: 16px;
+  bottom: 240px;
+  width: 560px;
+  left: 150px;
+  font-family: 'Tomorrow';
+  line-height: 25px;
+}
+
+.bottom-paragraph {
+  text-align: center;
+  font-family: 'Tomorrow';
+  color: white;
+  font-size: 16px;
+  position: relative;
+  bottom: 240px;
+  float: left;
+  left: 50px;
+  width: 1100px;
+  line-height: 25px;
+}
+
+.background-clip2 {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+height: auto;
+
+}
+
+.bottom-buttons {
+  display: inline;
+  font-family: 'Tomorrow';
+  
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.bottom-buttons a {
+  color: white;
+}
+
+.button1 {
+  width: 400px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button1:hover {
+  background-color: rgb(133, 133, 133);
+  cursor: pointer;
+  transition: 100ms;
+}
+
+/* CSS for symptoms.html ------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#visited-sym {
+  
+  text-decoration: underline;
+}
+
+#middle-about3 {
+  background-color: rgb(55, 74, 58);
+  height: 69%;
+  width: 1200px;
+  z-index: 1;
+  padding-top: 210px;
+ 
+  right: 13%;
+  top: 150px;
+  ;
+  position: absolute;
+  justify-content: center;
+ 
+  
+}
+
+/* CSS for resource.html ------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.resource-title {
+    display: block;
+   z-index: 6;
+   position: relative;
+   bottom: 190px;
+}
+
+.resource-title-text {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Tomorrow';
+    color: white;
+
+}
+
+.white-about {
+    background-color: rgb(223, 223, 223);
+    width: 1200px;
+    height: 79%;
+    bottom: 40px;
+    position: absolute;
+}
+
+.grid-for-resources {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+}
+
+.resource-grid1 {
+
+}
+
+.resource-grid2 {
+
+}
+
+.resources-titles-info{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Tomorrow';
+}
+
+.patients-list1 {
+    list-style-type: circle;
+    font-family: 'Tomorrow';
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.link1-resources {
+    font-family: 'Tomorrow';
+    text-decoration: underline;
+
+}
+
+.link1-resources:hover {
+    color: rgb(60, 171, 60);
+}
+
+#link1-soo {
+    display: block;
+   text-align: center;
+   position: relative;
+   top: 20px;
+   font-size: 20px;
+}
+
+
+/* CSS for meetourstaff.html -----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.staff-title {
+
+text-align: center;
+color: white;
+font-family: 'Tomorrow';
+font-size: 40px;
+z-index: 10;
+position: relative;
+bottom: 200px;
+}
+
+.staff-images {
+  display: inline-block;
+  
+position: absolute;
+width: 100px;
+  left: 420px;
+bottom: 555px;
+padding-left: 10px;
+}
+
+
+
+.hover-inform {
+  width: 110px;
+  height: 110px;
+
+}
+
+.hover-inform:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 3px white;
+}
+
+.hide {
+  display: none;
+}
+
+.staff-images:hover + .hide {
+  display: block;
+}
+
+.staff-images2 {
+  display: inline-block;
+position: relative;
+width: 300px;
+  left: 545px;
+bottom: 200px;
+padding-left: 10px;
+}
+
+.staff-images3 {
+  display: inline-block;
+  
+position: relative;
+width: 900px;
+  left: 356px;
+bottom: 315px;
+padding-left: 10px;
+}
+
+.hover-inform2 {
+  width: 410px;
+  height: 410px;
+position: absolute;
+border: 8px solid white;
+}
+
+.grid-for-staff-members {
+  display: grid;
+  grid-template-columns: 400px 400px;
+
+
+}
+
+.grid-mega1 {
+position: absolute;
+left: 100px;
+bottom: 490px;
+z-index: 10;
+}
+
+.grid-mega2 {
+  position: absolute;
+left: 600px;
+right: 100px;
+bottom: 100px;
+justify-content: center;
+display: block;
+z-index: 10;
+}
+
+.paragraph700 {
+  text-align: center;
+}
+
+.heading-700 {
+  text-align: center;
+  position: relative;
+}
+
+.white-backhand {
+  background-color: rgb(192, 192, 192);
+  height: 41%;
+  width: 1200px;
+  z-index: -3;
+  padding-top: 210px;
+ 
+  
+  top: 250px;
+  
+  position: absolute;
+  justify-content: center;
+ 
+}
+
+.staff-images2:hover + .hide {
+  display: block;
+}
+.staff-images3:hover + .hide {
+  display: block;
+}
+
+.staff-images3 {
+  display: inline-block;
+  
+position: absolute;
+width: 300px;
+  left: 670px;
+bottom: 554px;
+padding-left: 10px;
+}
